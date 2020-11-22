@@ -8,3 +8,14 @@
 
 # actor = Actor.new({first_name: "Benedict", last_name: "Cumberbatch", known_for: "Sherlock"})
 # actor.save
+
+# require 'ffaker'
+
+# 10.times do
+#   first_name = FFaker::Name.first_name_male
+#   last_name = FFaker::Name.last_name
+#   movie = FFaker::Movie.title
+
+#   Actor.create(first_name: first_name, last_name: last_name, known_for: movie)
+  
+# end

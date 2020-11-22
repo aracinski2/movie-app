@@ -1,0 +1,7 @@
+@movies.map do |movie|
+  {
+    movie: movie.movie,
+    year: movie.year,
+    plot: movie.plot,
+  }
+end

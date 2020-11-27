@@ -10,6 +10,6 @@ Rails.application.routes.draw do
     post "/actors/:id" => "actors#show"
 
     get "/movies" => "movies#index"
-    post "/movies/:id" => "movies#show"
+    get "/movies/:id" => "movies#show"
   end
 end

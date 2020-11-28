@@ -10,4 +10,13 @@ class Api::MoviesController < ApplicationController
     render 'show.json.jb'
   end
 
+  def create
+    @movie = Movie.create(
+      title: params[:title],
+      year: params[:year],
+      plot: params[:plot],
+    )
+    render 'show.json.jb'
+  end
+
 end

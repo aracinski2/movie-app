@@ -17,4 +17,13 @@ class Api::ActorsController < ApplicationController
     )
     render 'show.json.jb'
   end
+
+  def update
+    @actor = Actor.find_by(id: params[:id])
+    @actor.first_name = params[:first_name]
+    @actor.last_name = params[:last_name]
+    @actor.known_for = params[:known_for]
+    @actor.save
+    render 'show.json.jb'
+  end
 end

@@ -11,5 +11,6 @@ Rails.application.routes.draw do
     get "/actors/:id" => "actors#show"
     post "/actors" => "actors#create"
     patch "/actors/:id" => "actors#update"
+    delete "/actors/:id" => "actors#delete"
   end
 end

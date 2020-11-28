@@ -14,6 +14,6 @@ Rails.application.routes.draw do
     delete "/actors/:id" => "actors#delete"
 
     get "/movies" => "movies#index"
-    
+    get "/movies/:id" => "movies#show"
   end
 end

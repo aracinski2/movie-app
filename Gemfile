@@ -43,3 +43,5 @@ gem 'rack-cors'
 gem 'jb'
 
 gem 'ffaker'
+
+gem 'jwt'

@@ -17,6 +17,7 @@ class Api::ActorsController < ApplicationController
       known_for: params[:known_for],
       gender: params[:gender],
       age: params[:age],
+      movie_id: params[:movie_id],
     )
     if @actor.save
       render 'show.json.jb'
@@ -32,6 +33,7 @@ class Api::ActorsController < ApplicationController
     @actor.known_for = params[:known_for]
     @actor.gender = params[:gender]
     @actor.age = params[:age]
+    @actor.movie_id = params[:movie_id]
     @actor.save
     if @actor.save
       render 'show.json.jb'

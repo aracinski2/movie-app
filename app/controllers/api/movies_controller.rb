@@ -26,6 +26,8 @@ class Api::MoviesController < ApplicationController
     @movie.title = params[:title]
     @movie.year = params[:year]
     @movie.plot = params[:plot]
+    @movie.director = params[:director]
+    @movie.english = params[:english]
     @movie.save
     render 'show.json.jb'
   end

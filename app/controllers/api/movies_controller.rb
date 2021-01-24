@@ -15,6 +15,8 @@ class Api::MoviesController < ApplicationController
       title: params[:title],
       year: params[:year],
       plot: params[:plot],
+      director: params[:director],
+      english: params[:english],
     )
     render 'show.json.jb'
   end

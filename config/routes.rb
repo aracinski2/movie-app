@@ -19,6 +19,8 @@ Rails.application.routes.draw do
     patch "/movies/:id" => "movies#update"
     delete "/movies/:id" => "movies#delete"
 
+    post "/movie_genres" => "movie_genres#create"
+
     post "/users" => "users#create"
     post "/sessions" => "sessions#create"
   end
